@@ -103,4 +103,4 @@ class CinemaHallViewSet(
     mixins.DestroyModelMixin,
 ):
     queryset = CinemaHall.objects.all()
-    serializer = CinemaHallSerializer
+    serializer_class = CinemaHallSerializer
