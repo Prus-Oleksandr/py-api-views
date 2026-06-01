@@ -14,7 +14,7 @@ cinema_hall_list = CinemaHallViewSet.as_view(actions={
     "get": "list",
     "post": "create",
 })
-cinema_hall_detail = CinemaHallViewSet.as_view(actions={
+cinema_halls_detail = CinemaHallViewSet.as_view(actions={
     "get": "retrieve",
     "put": "update",
     "patch": "partial_update",
@@ -32,7 +32,7 @@ urlpatterns = [
     path("cinema_halls/", cinema_hall_list, name="cinema-hall-list"),
     path(
         "cinema_halls/<int:pk>",
-        cinema_hall_detail,
+        cinema_halls_detail,
         name="cinema-hall-detail"
     ),
 ]
